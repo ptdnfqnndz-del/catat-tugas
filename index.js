@@ -43,8 +43,8 @@ app.get("/daftar-tugas", (req, res) => {
   res.json(daftarTugas);
 });
 
-app.listen(PORT, () => {
-  console.log("Server jalan di http://localhost:3000");
+app.listen(3000, "0.0.0.0", () => {
+  console.log("Server jalan di semua interface pada port", PORT);
 });
 
 app.get("/cek-reminder", (req, res) => {
